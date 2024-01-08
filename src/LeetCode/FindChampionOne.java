@@ -27,6 +27,23 @@ public class FindChampionOne {
         ));
     }
 
+    /**
+     * There are n teams numbered from 0 to n - 1 in a tournament.
+     * Given a 0-indexed 2D boolean matrix grid of size n * n.
+     * For all 'i', 'j' that 0 <= i, j <= n - 1 and i != j team 'i' is stronger
+     * than team 'j' if grid[i][j] == 1, otherwise, team 'j' is stronger than team 'i'.
+     * <br>
+     * Team a will be the champion of the tournament if there is no
+     * team b that is stronger than team a.
+     * <br>
+     * Return the team that will be the champion of the tournament.
+     * <br>
+     * <br>
+     * Complexity of <b>O(N^2)</b>
+     *
+     * @param grid 0-indexed 2d boolean matrix.
+     * @return team that is a champion.
+     */
     public static int findChampion(int[][] grid) {
         for (int i = 0; i < grid.length; i++) {
             boolean isChampion = true;

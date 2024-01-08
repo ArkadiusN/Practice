@@ -10,6 +10,19 @@ public class ReverseInteger {
         System.out.println(reverse(1534236469));
     }
 
+    /**
+     * Given a signed 32-bit integer x, return x with its digits reversed.
+     * If reversing x causes the value to go outside the signed 32-bit
+     * integer range [-231, 231 - 1], then return 0.
+     * <br>
+     * Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
+     * <br>
+     * <br>
+     * Complexity of <b>O(1)</b>
+     *
+     * @param x 32-bit integer to reverse.
+     * @return reversed integer 'x'.
+     */
     public static int reverse(int x) {
         if(x == 0){return 0;}
         StringBuilder s1 = new StringBuilder(String.valueOf(x)).reverse();
@@ -25,7 +38,7 @@ public class ReverseInteger {
             }
         }
         long p = Long.parseLong(String.valueOf(s1));
-        if(p > Integer.MAX_VALUE || p < Integer.MIN_VALUE){ return 0; }
+        if(p > Integer.MAX_VALUE || p < Integer.MIN_VALUE){return 0;}
         return (int) p;
     }
 }

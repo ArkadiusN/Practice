@@ -32,7 +32,6 @@ public class RichestCustomerWealth {
      * <br>
      * Complexity of <b>O(N * M)</b>
      *
-     *
      * @param accounts the integer grid with the amount of money each customer has in 'jth' bank.
      * @return the sum of bank accounts that is the largest.
      */
