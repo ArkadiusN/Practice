@@ -4,42 +4,22 @@ import java.util.Arrays;
 
 public class MergeStringAlternately {
     public static void main(String[] args) {
-        mergeAlternately("abc", "pqrs");
-
+        System.out.println(mergeAlternately("abc", "pqr"));
+        System.out.println(mergeAlternately("ab", "pqrs"));
+        System.out.println(mergeAlternately("abcd", "pq"));
     }
     public static String mergeAlternately(String word1, String word2) {
-        char [] newWord = new char[word1.length() + word2.length()];
-        System.out.println(newWord.length);
-
-        int i = 1;
-        while (i < newWord.length){
-            newWord[i] = 'o';
-            i+=2;
-        }
-
-        int j = 0;
-        int g = 0;
-        while(j < word1.length()){
-            if(newWord[g] != 'o'){
-                newWord[g] = word1.charAt(j);
-            } else {
-                g++;
-                newWord[g] = word1.charAt(j);
+        StringBuilder sb = new StringBuilder();
+        int i = 0;
+        while (i < word1.length() || i < word2.length()) {
+            if(i < word1.length()) {
+                sb.append(word1.charAt(i));
             }
-            j++;
-            g++;
-        }
-
-        int l = 0;
-        int k = 1;
-        while (k < word2.length()){
-            if(newWord[k] == 'o'){
-                newWord[k] = word2.charAt(l);
+            if(i < word2.length()) {
+                sb.append(word2.charAt(i));
             }
-            l++;
-            k+=2;
+            i++;
         }
-        System.out.println(Arrays.toString(newWord));
-        return "hello";
+        return sb.toString();
     }
 }
