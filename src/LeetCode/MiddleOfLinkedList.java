@@ -12,7 +12,7 @@ public class MiddleOfLinkedList {
     /**
      * Definition for singly-linked list by LeetCode.
      */
-    public static class ListNode {
+    private static class ListNode {
         int val;
         ListNode next;
 

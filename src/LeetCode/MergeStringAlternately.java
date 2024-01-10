@@ -8,6 +8,26 @@ public class MergeStringAlternately {
         System.out.println(mergeAlternately("ab", "pqrs"));
         System.out.println(mergeAlternately("abcd", "pq"));
     }
+
+    /**
+     * You are given two strings word1 and word2.
+     * <br>
+     * Merge the strings by adding letters in alternating order,
+     * <br>
+     * starting with word1. If a string is longer than the other,
+     * <br>
+     * append the additional letters onto the end of the merged string.
+     * <br>
+     * Return the merged string.
+     *
+     * <br>
+     * <br>
+     * Complexity of <b>O(N)</b>
+     *
+     * @param word1 first string to be merged alternatively  (index = 0, 2, 4 ...).
+     * @param word2 second string to be merged alternatively (index = 1, 3, 5 ...).
+     * @return string merged alternatively.
+     */
     public static String mergeAlternately(String word1, String word2) {
         StringBuilder sb = new StringBuilder();
         int i = 0;
