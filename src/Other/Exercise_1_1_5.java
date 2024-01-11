@@ -2,9 +2,9 @@ package Other;
 
 import edu.princeton.cs.algs4.StdOut;
 
-public class Exercises_1_1_5 {
+public class Exercise_1_1_5 {
     public static void main(String[] args) {
-        Exercises_1_1_5 e = new Exercises_1_1_5();
+        Exercise_1_1_5 e = new Exercise_1_1_5();
         StdOut.println(e.checkRange(args[0], args[1]));
     }
 

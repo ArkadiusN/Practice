@@ -2,7 +2,7 @@ package Other;
 
 import edu.princeton.cs.algs4.StdOut;
 
-public class Exercises_1_1_7 {
+public class Exercise_1_1_7 {
     public static void main(String[] args) {
         check();
         check2();
