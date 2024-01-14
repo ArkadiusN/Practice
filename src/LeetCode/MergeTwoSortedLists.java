@@ -43,20 +43,4 @@ public class MergeTwoSortedLists {
             return list2;
         return list1;
     }
-
-
-//    public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-//        List<ListNode> arr = new ArrayList<>();
-//        while (list1 != null || list2 !=null){
-//
-//
-//            list1 = list1.next;
-//
-//        }
-//
-//
-//
-//
-//        return list1;
-//    }
 }

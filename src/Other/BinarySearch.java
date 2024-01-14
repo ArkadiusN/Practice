@@ -57,9 +57,4 @@ public class BinarySearch {
         }
         return -1;
     }
-
-    public static int val(){
-        return ( 0 + 15 ) / 2;
-    }
-
 }

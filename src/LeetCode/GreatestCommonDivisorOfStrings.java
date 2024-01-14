@@ -5,9 +5,7 @@ public class GreatestCommonDivisorOfStrings {
         System.out.println(gcdOfStrings("ABCABC", "ABC"));
         System.out.println(gcdOfStrings("ABABAB", "ABAB"));
         System.out.println(gcdOfStrings("ABCDEF", "ABC"));
-        System.out.println(gcdOfStrings(
-                "TAUXXTAUXXTAUXXTAUXXTAUXX",
-                "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX"));
+        System.out.println(gcdOfStrings("TAUXXTAUXXTAUXXTAUXXTAUXX", "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX"));
     }
 
     /**
