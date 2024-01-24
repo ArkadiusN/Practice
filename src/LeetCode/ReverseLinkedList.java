@@ -1,9 +1,5 @@
 package LeetCode;
 
-import edu.princeton.cs.algs4.StdOut;
-
-import java.util.Arrays;
-
 public class ReverseLinkedList {
     public static void main(String[] args) {
         reverseList(new ListNode(5,
@@ -19,7 +15,6 @@ public class ReverseLinkedList {
           ListNode(int val) { this.val = val; }
          ListNode(int val, ListNode next) { this.val = val; this.next = next; }
       }
-
 
     public static ListNode reverseList(ListNode head) {
         ListNode prev = null;
