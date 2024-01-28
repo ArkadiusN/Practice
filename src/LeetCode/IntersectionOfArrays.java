@@ -8,6 +8,21 @@ public class IntersectionOfArrays {
         intersection2(new int[]{4,9,5}, new int[]{9,4,9,8,4});
     }
 
+    /**
+     * Given two integer arrays nums1 and nums2, return an array
+     * <br>
+     * of their intersection. Each element in the result must be
+     * <br>
+     * unique and you may return the result in any order.
+     * <br>
+     * <br>
+     * Complexity of <b>O(N)</b>
+     *
+     *
+     * @param nums1 first array of integers.
+     * @param nums2 second array of integers.
+     * @return intersection array.
+     */
     public static int[] intersection(int[] nums1, int[] nums2) {
         Map<Integer, Integer> map1 = new HashMap<>();
         Map<Integer, Integer> map2 = new HashMap<>();
@@ -31,6 +46,14 @@ public class IntersectionOfArrays {
         return arr;
     }
 
+    /**
+     * Complexity of <b>O(N)</b>
+     *
+     *
+     * @param nums1 first array of integers.
+     * @param nums2 second array of integers.
+     * @return intersection array.
+     */
     public static int[] intersection2(int[] nums1, int[] nums2) {
         Map<Integer, Integer> map1 = new HashMap<>(), map2 = new HashMap<>();
         Set<Integer> set = new HashSet<>();

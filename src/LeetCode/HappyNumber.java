@@ -9,7 +9,22 @@ public class HappyNumber {
         StdOut.println(isHappy(7));
     }
 
-
+    /**
+     * Write an algorithm to determine if a number 'n' is happy.
+     * <br>
+     * A happy number is a number defined by the following process:
+     *  <ul>
+     *   <li>Starting with any positive integer, replace the number by the sum of the squares of its digits.</li>
+     *   <li>Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.</li>
+     *   <li>Those numbers for which this process ends in 1 are happy.</li>
+     *   <li>Return true if n is a happy number, and false if not.</li>
+     * </ul>
+     * Complexity of <b>O(N)</b>
+     *
+     *
+     * @param n integer to be determined against 'happy' criteria.
+     * @return true if 'n' is happy, otherwise false.
+     */
     public static boolean isHappy(int n) {
         String str = String.valueOf(n);
         int sum = 0;
