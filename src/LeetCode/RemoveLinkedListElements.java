@@ -1,7 +1,6 @@
 package LeetCode;
 
 import edu.princeton.cs.algs4.StdOut;
-import java.util.ArrayList;
 
 public class RemoveLinkedListElements {
     public static void main(String[] args) {
@@ -35,20 +34,31 @@ public class RemoveLinkedListElements {
         }
     }
 
+    /**
+     * Given the head of a linked list and an integer val,
+     * <br>
+     * remove all the nodes of the linked list that has
+     * <br>
+     * Node.val == val, and return the new head.
+     * <br>
+     * <br>
+     * Complexity of <b>O(N)</b>
+     *
+     * @param head first Node of our Single LinkedList.
+     * @param val target we want to remove.
+     * @return the head of the linked list.
+     */
     public static ListNode removeElements(ListNode head, int val) {
-        ArrayList<Integer> list = new ArrayList<>(); // Array to check contents of LinkedList.
         ListNode temp = new ListNode(0);
         ListNode current = temp;
+        temp.next = head;
         while (current.next != null) {
             if(current.next.val == val){
-                list.add(current.val);
                 current.next = current.next.next;
+            }else{
+                current = current.next;
             }
-            list.add(current.val);
-            current = current.next;
         }
-        System.out.println(list);
         return temp.next;
     }
-
 }
