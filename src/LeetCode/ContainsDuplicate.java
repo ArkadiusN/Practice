@@ -16,6 +16,23 @@ public class ContainsDuplicate {
                 3,10}));
     }
 
+    /**
+     * Given an integer array 'nums', return true
+     * <br>
+     * if any value appears at least twice in the
+     * <br>
+     * array, and return false if every element is distinct.
+     * <br>
+     * <br>
+     * Complexity of <b>O(N)</b>
+     * <br>
+     * Space complexity <b>O(N)</b>
+     *
+     *
+     * @param nums integer array.
+     * @return true for array with values appearing at least
+     * twice, otherwise return false for distinct elements.
+     */
     public static boolean containsDuplicate(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int j : nums) {
@@ -30,6 +47,16 @@ public class ContainsDuplicate {
         return false;
     }
 
+    /**
+     * Complexity of <b>O(N)</b>
+     * <br>
+     * Space complexity <b>O(N)</b>
+     *
+     *
+     * @param nums integer array.
+     * @return true for array with values appearing at least
+     * twice, otherwise return false for distinct elements.
+     */
     public static boolean containsDuplicate2(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int j : nums) {
@@ -44,6 +71,16 @@ public class ContainsDuplicate {
         return false;
     }
 
+    /**
+     * Complexity of <b>O(N)</b>
+     * <br>
+     * Space complexity <b>O(N)</b>
+     *
+     *
+     * @param nums integer array.
+     * @return true for array with values appearing at least
+     * twice, otherwise return false for distinct elements.
+     */
     public static boolean containsDuplicate3(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int j : nums) {

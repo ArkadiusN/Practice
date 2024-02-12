@@ -20,6 +20,9 @@ public class CountingBits {
      * <br>
      * <br>
      * Complexity of <b>O(N)</b>
+     * <br>
+     * Space complexity <b>O(N)</b>
+     *
      *
      * @param n integer from which we seek bits of individual integer from 0 to n+1;
      * @return array of number of '1's for each value from 0 to n+1;
@@ -45,6 +48,9 @@ public class CountingBits {
      * <br>
      * <br>
      * Complexity of <b>O(1)</b>
+     * <br>
+     * Space complexity <b>O(1)</b>
+     *
      *
      * @param n integer used to get Hamming weight.
      * @return number of '1's.
@@ -60,11 +66,15 @@ public class CountingBits {
      * <br>
      * <br>
      * Complexity of <b>O(N)</b>
+     * <br>
+     * Space complexity <b>O(1)</b>
+     *
      *
      * @param n binary representation of signed integer type.
      * @return number of '1's.
      */
     public static int hammingWeight3(String n) {
+        // N is the length of the string.
         int counter = 0;
         for (int i = 0; i < n.length(); i++) {
             if(n.charAt(i) == '1'){
@@ -83,11 +93,15 @@ public class CountingBits {
      * <br>
      * <br>
      * Complexity of <b>O(N)</b>
+     * <br>
+     * Space complexity <b>O(N)</b>
+     *
      *
      * @param n binary representation of signed integer type.
      * @return number of '1's.
      */
     public static int hammingWeight2(String n) {
+        // N is the length of the string.
         n = n.replaceAll("0", "");
         return n.length();
     }

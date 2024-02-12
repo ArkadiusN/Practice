@@ -9,26 +9,8 @@ public class ConvertBinaryNumInLinkedListToInt {
         StdOut.println(getDecimalValue(new ListNode(1, new ListNode(0, new ListNode(1, new ListNode(1))))));
     }
 
-    // Definition for singly-linked list.
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
     /**
-     * Given head which is a reference node to a singly-linked list.
+     * Given 'head' which is a reference node to a singly-linked list.
      * <br>
      * The value of each node in the linked list is either 0 or 1.
      * <br>

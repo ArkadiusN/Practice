@@ -40,6 +40,9 @@ public class FindChampionOne {
      * <br>
      * <br>
      * Complexity of <b>O(N^2)</b>
+     * <br>
+     * Space complexity <b>O(1)</b>
+     *
      *
      * @param grid 0-indexed 2d boolean matrix.
      * @return team that is a champion.
