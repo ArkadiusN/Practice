@@ -8,13 +8,6 @@ public class ReverseLinkedList {
                 new ListNode(2,
                         new ListNode(1))))));
     }
-    public static class ListNode {
-          int val;
-          ListNode next;
-          ListNode() {}
-          ListNode(int val) { this.val = val; }
-         ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-      }
 
     public static ListNode reverseList(ListNode head) {
         ListNode prev = null;
@@ -27,10 +20,6 @@ public class ReverseLinkedList {
             current = next;
         }
         head = prev;
-//        while (head != null){
-//            StdOut.print(head.val + " ");
-//            head = head.next;
-//        }
         return head;
     }
 }

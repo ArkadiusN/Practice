@@ -20,6 +20,8 @@ public class HappyNumber {
      *   <li>Return true if n is a happy number, and false if not.</li>
      * </ul>
      * Complexity of <b>O(N)</b>
+     * <br>
+     * Space complexity <b>O(N)</b>
      *
      *
      * @param n integer to be determined against 'happy' criteria.

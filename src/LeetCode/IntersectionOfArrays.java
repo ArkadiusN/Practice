@@ -16,7 +16,9 @@ public class IntersectionOfArrays {
      * unique and you may return the result in any order.
      * <br>
      * <br>
-     * Complexity of <b>O(N)</b>
+     * Complexity of <b>O(NUMS1 + NUMS2)</b>
+     * <br>
+     * Space complexity <b>O(NUMS1 + NUMS2)</b>
      *
      *
      * @param nums1 first array of integers.
@@ -47,7 +49,9 @@ public class IntersectionOfArrays {
     }
 
     /**
-     * Complexity of <b>O(N)</b>
+     * Complexity of <b>O(MAX(NUMS1 + NUMS2)</b>
+     * <br>
+     * Space complexity <b>O(NUMS1 + NUMS2)</b>
      *
      *
      * @param nums1 first array of integers.
