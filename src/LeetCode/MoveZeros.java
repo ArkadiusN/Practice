@@ -10,6 +10,25 @@ public class MoveZeros {
         moveZeroes(new int[]{0,1});
     }
 
+    /**
+     * Given an integer array 'nums', move all 0's
+     * <br>
+     * to the end of it while maintaining the relative
+     * <br>
+     * order of the non-zero elements.
+     * <br>
+     * Note that you must do this in-place without making
+     * <br>
+     * a copy of the array.
+     * <br>
+     * <br>
+     * Complexity of <b>O(N)</b>
+     * <br>
+     * Space complexity <b>O(1)</b>
+     *
+     *
+     * @param nums array of integers.
+     */
     public static void moveZeroes(int[] nums) {
         if(nums.length == 1){
             return;
@@ -26,6 +45,14 @@ public class MoveZeros {
         for (int l = j; l < nums.length; l++) nums[l] = 0;
     }
 
+    /**
+     * Complexity of <b>O(N)</b>
+     * <br>
+     * Space complexity <b>O(N)</b>
+     *
+     *
+     * @param nums array of integers.
+     */
     public static void moveZeroes2(int[] nums) {
         ArrayList<Integer> list = new ArrayList<>();
         int c = 0;

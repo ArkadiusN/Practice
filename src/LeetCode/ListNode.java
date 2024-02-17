@@ -1,5 +1,8 @@
 package LeetCode;
 
+/**
+ * Definition for singly-linked list by LeetCode.
+ */
 public class ListNode {
     int val;
     ListNode next;

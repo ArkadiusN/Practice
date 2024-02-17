@@ -15,6 +15,9 @@ public class NumberOf1Bits {
 
     /**
      * Complexity of <b>O(1)</b>
+     * <br>
+     * Space complexity <b>O(1)</b>
+     *
      *
      * @param n binary representation of signed integer type.
      * @return number of '1' bits.
@@ -32,6 +35,9 @@ public class NumberOf1Bits {
      * <br>
      * <br>
      * Complexity of <b>O(LogN) + O(M)</b>
+     * <br>
+     * Space complexity <b>O(LogN)</b>
+     *
      *
      * @param n binary representation of signed integer type.
      * @return number of '1' bits.

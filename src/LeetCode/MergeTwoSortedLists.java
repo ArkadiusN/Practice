@@ -1,35 +1,44 @@
 package LeetCode;
 
-import java.util.ArrayList;
-import java.util.List;
+import edu.princeton.cs.algs4.StdOut;
 
 public class MergeTwoSortedLists {
     public static void main(String[] args) {
-        System.out.println(mergeTwoLists(new ListNode(1, new ListNode(2, new ListNode(4))), new ListNode(1, new ListNode(3, new ListNode(4)))));
+        StdOut.println
+                (mergeTwoLists
+                        (new ListNode(1,
+                                new ListNode(2,
+                                        new ListNode(4))),
+                                new ListNode(1,
+                                        new ListNode(3,
+                                                new ListNode(4)))));
     }
 
     /**
-     * Definition for singly-linked list by LeetCode.
+     * You are given the heads of two sorted
+     * <br>
+     * linked lists list1 and list2.
+     * <br>
+     * Merge the two lists into one sorted list.
+     * <br>
+     * The list should be made by splicing together
+     * <br>
+     * the nodes of the first two lists.
+     * <br>
+     * Return the head of the merged linked list.
+     * <br>
+     * <br>
+     * Complexity of <b>O(M + N)</b>
+     * <br>
+     * Space complexity <b>O(M + N)</b>
+     *
+     *
+     * @param list1 sorted linked list one.
+     * @param list2 sorted linked list two.
+     * @return head of merged linked list.
      */
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2){
-        if(list1 != null && list2 != null) {
+        if(list1 != null && list2 != null) { // M and N is the length of each linked list.
             if(list1.val < list2.val) {
                 list1.next =  mergeTwoLists(list1.next,list2);
                 return list1;

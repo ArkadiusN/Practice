@@ -1,7 +1,6 @@
 package LeetCode;
 
 import edu.princeton.cs.algs4.StdOut;
-import java.math.BigInteger;
 
 public class AddTwoNumbers {
     public static void main(String[] args) {
@@ -66,7 +65,7 @@ public class AddTwoNumbers {
         n.reverse();
         m.reverse();
         char [] i = new StringBuilder
-                (new BigInteger(String.valueOf(n)).add(new BigInteger(String.valueOf(m))) + "")
+                (new java.math.BigInteger(String.valueOf(n)).add(new java.math.BigInteger(String.valueOf(m))) + "")
                 .reverse()
                 .toString()
                 .toCharArray();

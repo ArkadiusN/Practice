@@ -38,6 +38,8 @@ public class NextGreaterNodeInLinkedList {
      * <br>
      * <br>
      * Complexity of <b>O(N^2)</b>
+     * <br>
+     * Space complexity <b>O(N)</b>
      *
      *
      * @param head first Node of our Single LinkedList.

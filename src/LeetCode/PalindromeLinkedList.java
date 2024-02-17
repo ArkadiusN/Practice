@@ -1,7 +1,8 @@
 package LeetCode;
 
 import edu.princeton.cs.algs4.StdOut;
-import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
 
 public class PalindromeLinkedList {
     public static void main(String[] args) {
@@ -26,15 +27,22 @@ public class PalindromeLinkedList {
                                         new ListNode(1))))); // true
     }
 
-    //Definition for singly-linked list.
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
-
+    /**
+     * Given the head of a singly linked list,
+     * <br>
+     * return true if it is a palindrome
+     * <br>
+     * or false otherwise.
+     * <br>
+     * <br>
+     * Complexity of <b>O(N)</b>
+     * <br>
+     * Space complexity <b>O(N)</b>
+     *
+     *
+     * @param head first Node of our Single LinkedList.
+     * @return true for palindrome, otherwise false.
+     */
     public static boolean isPalindrome(ListNode head) {
         List<Integer> list = new ArrayList<>();
         ListNode current = head;

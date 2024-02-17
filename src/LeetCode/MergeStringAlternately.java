@@ -1,7 +1,5 @@
 package LeetCode;
 
-import java.util.Arrays;
-
 public class MergeStringAlternately {
     public static void main(String[] args) {
         System.out.println(mergeAlternately("abc", "pqr"));
