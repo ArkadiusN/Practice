@@ -20,16 +20,6 @@ public class SortList {
                                         new ListNode(3)))));
     }
 
-    // Definition for singly-linked list.
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
-
-
     public static ListNode sortList(ListNode head) {
         ListNode current = new ListNode(0);
         current.next = head;

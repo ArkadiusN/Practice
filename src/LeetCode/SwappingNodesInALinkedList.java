@@ -45,16 +45,6 @@ public class SwappingNodesInALinkedList {
                                                                                                                                 new ListNode(31,
                                                                                                                                         new ListNode(26)))))))))))))))),16);
     }
-
-    // Definition for singly-linked list.
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
-
     public static ListNode swapNodes(ListNode head, int k) {
         ListNode current = new ListNode(0);
         current.next = head;
