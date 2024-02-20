@@ -65,4 +65,44 @@ public class MissingNumber {
         }
         return nums.length;
     }
+
+    public static int missingNumber3(int[] nums) {
+        quickSort(nums, 0, nums.length-1);
+        int missing = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (i != nums[i]) {
+                missing = i;
+                break;
+            } else {
+                missing = nums[i] + 1;
+            }
+        }
+        return missing;
+    }
+
+    public static void swap(int [] A, int i, int j ){
+        int temp = A[i];
+        A[i] = A[j];
+        A[j] = temp;
+    }
+
+    public static int partition(int [] A, int low, int high){
+        int pivot = A[high], i = low;
+        for (int j = i; j < high; j++) {
+            if(A[j] <= pivot){
+                swap(A,i,j);
+                i = i+1;
+            }
+        }
+        swap(A,high,i);
+        return i;
+    }
+
+    public static void quickSort(int [] A, int low, int high){
+        if(low < high){
+            int p = partition(A,low,high);
+            quickSort(A,low,p-1);
+            quickSort(A,p+1,high);
+        }
+    }
 }
