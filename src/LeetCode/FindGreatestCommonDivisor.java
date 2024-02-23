@@ -1,7 +1,6 @@
 package LeetCode;
 
 import edu.princeton.cs.algs4.StdOut;
-
 import java.util.Arrays;
 
 public class FindGreatestCommonDivisor {
@@ -12,7 +11,24 @@ public class FindGreatestCommonDivisor {
         StdOut.println(findGCD(new int[]{6,9,10}));
     }
 
-
+    /**
+     * Given an integer array 'nums', return the greatest
+     * <br>
+     * common divisor of the smallest number and largest number in 'nums'.
+     * <br>
+     * The greatest common divisor of two numbers is the largest
+     * <br>
+     * positive integer that evenly divides both numbers.
+     * <br>
+     * <br>
+     * Complexity of <b>O(NLogN)</b>
+     * <br>
+     * Space complexity <b>O(1)</b>
+     *
+     *
+     * @param nums integer array.
+     * @return greatest common divisor of two numbers, being smallest and largest number.
+     */
     public static int findGCD(int[] nums) {
         Arrays.sort(nums);
         int gcd=1;

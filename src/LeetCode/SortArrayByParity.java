@@ -1,7 +1,6 @@
 package LeetCode;
 
 import edu.princeton.cs.algs4.StdOut;
-
 import java.util.Arrays;
 
 public class SortArrayByParity {
@@ -10,7 +9,7 @@ public class SortArrayByParity {
     }
 
     /**
-     * Given an integer array nums, move all the even integers
+     * Given an integer array 'nums', move all the even integers
      * <br>
      * at the beginning of the array followed by all the odd integers.
      * <br>
@@ -19,11 +18,11 @@ public class SortArrayByParity {
      * <br>
      * Complexity of <b>O(N)</b>
      * <br>
-     * Space complexity <b>O(1)</b>
+     * Space complexity <b>O(N)</b>
      *
      *
-     * @param nums
-     * @return
+     * @param nums integer array.
+     * @return array that has all even numbers at the start with odd numbers at the end.
      */
     public static int[] sortArrayByParity(int[] nums) {
         int[] result = new int[nums.length];

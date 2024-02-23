@@ -31,6 +31,15 @@ public class PowerOfTwo {
         return n == 1;
     }
 
+    /**
+     * Complexity of <b>O(1)</b>
+     * <br>
+     * Space complexity <b>O(1)</b>
+     *
+     *
+     * @param n integer to check.
+     * @return true if 'n' is power of two, otherwise false.
+     */
     public static boolean isPowerOfTwo2(int n) {
         if (n == 0) return false;
         int x = (int)(Math.log(n) / Math.log(2)), k = (int) Math.pow(2, x);
