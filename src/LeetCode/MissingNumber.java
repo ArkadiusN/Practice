@@ -66,6 +66,15 @@ public class MissingNumber {
         return nums.length;
     }
 
+    /**
+     * Complexity of <b>O(N)</b>
+     * <br>
+     * Space Complexity <b>O(LogN)<b>
+     *
+     *
+     * @param nums array of integers.
+     * @return missing integer from the given range of 'nums'.
+     */
     public static int missingNumber3(int[] nums) {
         quickSort(nums, 0, nums.length-1);
         int missing = 0;
@@ -80,12 +89,33 @@ public class MissingNumber {
         return missing;
     }
 
+    /**
+     * Complexity of <b>O(1)</b>
+     * <br>
+     * Space Complexity <b>O(1)<b>
+     *
+     *
+     * @param A array to be swapped.
+     * @param i first index.
+     * @param j second index.
+     */
     public static void swap(int [] A, int i, int j ){
         int temp = A[i];
         A[i] = A[j];
         A[j] = temp;
     }
 
+    /**
+     * Complexity of <b>O(N)</b>
+     * <br>
+     * Space Complexity <b>O(1)<b>
+     *
+     *
+     * @param A array to partition.
+     * @param low lower bound.
+     * @param high upper bound.
+     * @return position of the pivot.
+     */
     public static int partition(int [] A, int low, int high){
         int pivot = A[high], i = low;
         for (int j = i; j < high; j++) {
@@ -98,6 +128,16 @@ public class MissingNumber {
         return i;
     }
 
+    /**
+     * Complexity of <b>O(NLogN)</b>
+     * <br>
+     * Space Complexity <b>O(LogN)<b>
+     *
+     *
+     * @param A array to sort.
+     * @param low lower bound.
+     * @param high upper bound.
+     */
     public static void quickSort(int [] A, int low, int high){
         if(low < high){
             int p = partition(A,low,high);
