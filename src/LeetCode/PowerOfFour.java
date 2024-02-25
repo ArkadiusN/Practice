@@ -21,6 +21,8 @@ public class PowerOfFour {
      * <br>
      * <br>
      * Complexity of <b>O(LogN)</b>
+     * <br>
+     * Space complexity <b>O(1)</b>
      *
      *
      * @param n integer to check.

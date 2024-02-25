@@ -12,6 +12,9 @@ public class ReverseBits {
      * <br>
      * <br>
      * Complexity of <b>O(N)</b>
+     * <br>
+     * Space complexity <b>O(LogN)</b>
+     *
      *
      * @param n signed binary to reverse (32 bit).
      * @return value of reversed version of binary.

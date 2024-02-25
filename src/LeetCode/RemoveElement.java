@@ -23,6 +23,9 @@ public class RemoveElement {
      *   <li>Return k</li>
      * </ul>
      * Complexity of <b>O(N)</b>
+     * <br>
+     * Space complexity <b>O(1)</b>
+     *
      *
      * @param nums array of integers.
      * @param val element to be removed.

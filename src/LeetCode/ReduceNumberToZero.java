@@ -15,6 +15,9 @@ public class ReduceNumberToZero {
      * <br>
      * <br>
      * Complexity of <b>O(N)</b>
+     * <br>
+     * Space complexity <b>O(1)</b>
+     *
      *
      * @param num value we want to reduce.
      * @return number of steps it needed to take in order to reach 0.

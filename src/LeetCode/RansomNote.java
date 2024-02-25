@@ -16,6 +16,9 @@ public class RansomNote {
      * <br>
      * <br>
      * Complexity of <b>O(M)</b>
+     * <br>
+     * Space complexity <b>O(N)</b>
+     *
      *
      * @param ransomNote string to be constructed from 'magazine'.
      * @param magazine string to be used to check if its characters can create 'ransomNote'.

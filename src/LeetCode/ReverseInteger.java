@@ -19,6 +19,9 @@ public class ReverseInteger {
      * <br>
      * <br>
      * Complexity of <b>O(1)</b>
+     * <br>
+     * Space complexity <b>O(LogN)</b>
+     *
      *
      * @param x 32-bit integer to reverse.
      * @return reversed integer 'x'.

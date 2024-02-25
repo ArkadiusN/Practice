@@ -25,6 +25,9 @@ public class RemoveLinkedListElements {
      * <br>
      * <br>
      * Complexity of <b>O(N)</b>
+     * <br>
+     * Space complexity <b>O(1)</b>
+     *
      *
      * @param head first Node of our Single LinkedList.
      * @param val target we want to remove.
