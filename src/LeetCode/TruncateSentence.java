@@ -2,8 +2,6 @@ package LeetCode;
 
 import edu.princeton.cs.algs4.StdOut;
 
-import java.util.Arrays;
-
 public class TruncateSentence {
     public static void main(String[] args) {
         StdOut.println(truncateSentence("Hello how are you Contestant", 4));
