@@ -8,6 +8,32 @@ public class NumberOfSeniorCitizens {
         StdOut.println(countSeniors2(new String[]{"1313579440F2036","2921522980M5644"}));
     }
 
+    /**
+     * You are given a 0-indexed array of strings details. Each element
+     * <br>
+     * of details provides information about a given passenger compressed
+     * <br>
+     * into a string of length 15. The system is such that:
+     * <br>
+     * The first ten characters consist of the phone number of passengers.
+     * <br>
+     * The next character denotes the gender of the person.
+     * <br>
+     * The following two characters are used to indicate the age of the person.
+     * <br>
+     * The last two characters determine the seat allotted to that person.
+     * <br>
+     * Return the number of passengers who are strictly more than 60 years old.
+     * <br>
+     * <br>
+     * Complexity of <b>O(N)</b>
+     * <br>
+     * Space complexity <b>O(1)</b>
+     *
+     *
+     * @param details in the form of a String.
+     * @return number of passengers who are older than 60 years old.
+     */
     public static int countSeniors(String[] details) {
         int counter = 0, n;
         for (String s : details) {
@@ -18,6 +44,15 @@ public class NumberOfSeniorCitizens {
         return counter;
     }
 
+    /**
+     * Complexity of <b>O(N)</b>
+     * <br>
+     * Space complexity <b>O(1)</b>
+     *
+     *
+     * @param details in the form of a String.
+     * @return number of passengers who are older than 60 years old.
+     */
     public static int countSeniors2(String[] details) {
         int counter = 0;
         for (String detail : details) {
