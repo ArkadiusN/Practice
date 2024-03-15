@@ -16,15 +16,14 @@ public class MinimizeStringLength {
      * <br>
      * following operation any number of times:
      * <br>
-     * Choose an index i in the string, and let c be
-     * <br>
-     * the character in position i. Delete the closest
-     * <br>
-     * occurrence of c to the left of i (if any) and the
-     * <br>
-     * closest occurrence of c to the right of i (if any).
-     * <br>
-     * Your task is to minimize the length of s by performing
+     * <ul>
+     *   <li>Choose an index 'i' in the string,
+     *   and let 'c' be the character in position 'i'.
+     *   Delete the closest occurrence of 'c' to the
+     *   left of 'i' (if any) and the closest occurrence
+     *   of 'c' to the right of 'i' (if any).</li>
+     * </ul>
+     * Your task is to minimize the length of 's' by performing
      * <br>
      * the above operation any number of times.
      * <br>
@@ -37,7 +36,7 @@ public class MinimizeStringLength {
      *
      *
      * @param s String to be minimized.
-     * @return the length of the new string.
+     * @return the length of the new String.
      */
     public static int minimizedStringLength(String s) {
         Set<Character> hs = new HashSet<>();

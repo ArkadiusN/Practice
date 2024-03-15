@@ -9,20 +9,18 @@ public class NumberOfSeniorCitizens {
     }
 
     /**
-     * You are given a 0-indexed array of strings details. Each element
+     * You are given a 0-indexed array of strings 'details'. Each element
      * <br>
-     * of details provides information about a given passenger compressed
+     * of 'details' provides information about a given passenger compressed
      * <br>
-     * into a string of length 15. The system is such that:
+     * into a string of length '15'. The system is such that:
      * <br>
-     * The first ten characters consist of the phone number of passengers.
-     * <br>
-     * The next character denotes the gender of the person.
-     * <br>
-     * The following two characters are used to indicate the age of the person.
-     * <br>
-     * The last two characters determine the seat allotted to that person.
-     * <br>
+     * <ul>
+     *   <li>The first ten characters consist of the phone number of passengers.</li>
+     *   <li>The next character denotes the gender of the person.</li>
+     *   <li>The following two characters are used to indicate the age of the person.</li>
+     *   <li>The last two characters determine the seat allotted to that person.</li>
+     * </ul>
      * Return the number of passengers who are strictly more than 60 years old.
      * <br>
      * <br>

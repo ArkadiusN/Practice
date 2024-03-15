@@ -5,23 +5,26 @@ import edu.princeton.cs.algs4.StdOut;
 public class FindUniqueBinaryString {
     public static void main(String[] args) {
         StdOut.println(findDifferentBinaryString(new String[]{"01", "10"}));
+        StdOut.println(findDifferentBinaryString(new String[]{"00", "01"}));
+        StdOut.println(findDifferentBinaryString(new String[]{"111","011","001"}));
     }
 
     /**
-     * Given an array of strings nums containing n
+     * Given an array of strings 'nums' containing 'n'
      * <br>
-     * unique binary strings each of length n, return
+     * unique binary strings each of length 'n', return
      * <br>
-     * a binary string of length n that does not appear
+     * a binary string of length 'n' that does not appear
      * <br>
-     * in nums. If there are multiple answers, you may return any of them.
+     * in 'nums'. If there are multiple answers, you may return any of them.
+     * <br>
      * <br>
      * Complexity of <b>O(N)</b>
      * <br>
      * Space complexity <b>O(N)</b>
      *
      *
-     * @param nums array of binary strings
+     * @param nums array of binary strings.
      * @return binary string that does not appear in nums.
      */
     public static String findDifferentBinaryString(String[] nums) {
