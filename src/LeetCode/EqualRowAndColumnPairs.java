@@ -23,6 +23,28 @@ public class EqualRowAndColumnPairs {
                                                 {1,11}}));
     }
 
+    /**
+     * Given a 0-indexed 'n x n' integer matrix 'grid',
+     * <br>
+     * return the number of pairs '(ri, cj)' such that
+     * <br>
+     * row 'ri' and column 'cj' are equal.
+     * <br>
+     * A row and column pair is considered equal if
+     * <br>
+     * they contain the same elements in the same
+     * <br>
+     * (i.e., an equal array).
+     * <br>
+     * <br>
+     * Complexity of <b>O(N * M)</b>
+     * <br>
+     * Space complexity <b>O(N * M)</b>
+     *
+     *
+     * @param grid 2d integer array.
+     * @return number of pairs such that row and column are equal.
+     */
     public static int equalPairs(int[][] grid) {
         Map<String, Integer> map = new HashMap<>(), map2 = new HashMap<>();
         int counter = 0;
@@ -42,13 +64,10 @@ public class EqualRowAndColumnPairs {
             }
             map2.put(currentNum.toString(), map2.getOrDefault(currentNum.toString(), 0) + 1);
         }
-        System.out.println(map);
-        System.out.println(map2);
         for(String str : map.keySet()) {
             counter += map2.containsKey(str) ? map.get(str) * map2.get(str) : 0;
         }
         return counter;
     }
-
 }
 
